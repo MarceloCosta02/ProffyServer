@@ -10,3 +10,7 @@
 - Rota para criar uma aula;
 - Rota para listar aulas;
 - Filtrar por matéria, dia da semana e horário;
+
+## Arquivo ProcFile
+
+-- Serve para que o Heroku identifique o comando a ser dado para startar a aplicação
