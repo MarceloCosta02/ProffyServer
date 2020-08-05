@@ -12,7 +12,7 @@ export async function up(knex: Knex) {
         .onDelete('CASCADE'); // Caso o id do usuario seja deletado, ele deleta em cascata tudo oq contem a FK dele na tabela de classes
     
         table.timestamp('created_at')
-            .defaultTo('now()')
+            .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
             .notNullable();
     });
 }
